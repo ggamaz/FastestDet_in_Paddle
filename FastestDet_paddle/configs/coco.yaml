@@ -1,0 +1,18 @@
+DATASET:
+  TRAIN: "/home/galaxy/MyWorks/python_expriments/experiment_5/train.txt"
+  VAL: "/home/galaxy/MyWorks/python_expriments/experiment_5/val.txt"
+  NAMES: "configs/class.names"
+MODEL:
+  NC: 10
+  INPUT_WIDTH: 352
+  INPUT_HEIGHT: 352
+TRAIN:
+  LR: 0.001
+  THRESH: 0.25
+  WARMUP: true
+  BATCH_SIZE: 80
+  END_EPOCH: 250
+  MILESTIONES: #milestones
+    - 100
+    - 150
+    - 200
